@@ -1,0 +1,58 @@
+{
+	"badges": [
+		{
+			"firstName": "Mery",
+			"lastName": "Martinez",
+			"email": "mery.martinez@gmail.com",
+			"jobTitle": "Expert React",
+			"twitter": "Mery_Love",
+			"avatarUrl": "https://www.gravatar.com/avatar/c4639ad1737b73c99efe017836614583?d=identicon",
+			"id": 1
+		},
+		{
+			"firstName": "Jairo Jersi",
+			"lastName": "Quispe Navarro",
+			"email": "jairo.jersi@gmail.com",
+			"jobTitle": "Backend Developer",
+			"twitter": "ZaytoCode",
+			"avatarUrl": "https://www.gravatar.com/avatar/3c57699f3f32516e3a3f08e41b7af2e5?d=identicon",
+			"id": 2
+		},
+		{
+			"firstName": "Lissa",
+			"lastName": "Simons Smith",
+			"email": "lissa.smith@gmail.com",
+			"jobTitle": "Web Designer",
+			"twitter": "Lissa_ss",
+			"avatarUrl": "https://www.gravatar.com/avatar/5a4165126a602fae3644d0cac9fc98cc?d=identicon",
+			"id": 3
+		},
+		{
+			"firstName": "Sammy",
+			"lastName": "Lee Chan",
+			"email": "sammy.lee@gmail.com",
+			"jobTitle": "Product Designer",
+			"twitter": "Lee_Chan",
+			"avatarUrl": "https://www.gravatar.com/avatar/6888fc8290d10784248219912ab4f5a6?d=identicon",
+			"id": 4
+		},
+		{
+			"firstName": "Lesly Jazmin",
+			"lastName": "Turris",
+			"email": "jazmin_turris@gmail.com",
+			"jobTitle": "Backend Developer",
+			"twitter": "Les25",
+			"avatarUrl": "https://www.gravatar.com/avatar/d0f6474e2a69199923d4320b24bce077?d=identicon",
+			"id": 5
+		},
+		{
+			"firstName": "Jhonny",
+			"lastName": "Quispe Navarro",
+			"email": "quispejl_99@hotmail.com",
+			"jobTitle": "Frontend Engineer",
+			"twitter": "JCode_99",
+			"avatarUrl": "https://static.platzi.com/media/avatars/avatars/JCode_bc2ee97f-2dfb-4d93-9c1e-0a64735e13c6.jpeg",
+			"id": 6
+		}
+	]
+}
