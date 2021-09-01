@@ -1,20 +1,20 @@
-const { Router } = require('express')
-const router = Router()
+import { Router } from "express";
+const router = Router();
 
 // db
-const { badges } = require('../db.json')
+import { badges } from "../db.json";
 
 // get data
-router.get('/', (req, res) => {
-	res.json(badges)
-})
+router.get("/", (req, res) => {
+	res.json(badges);
+});
 
 // get one data
-router.get('/:id', (req, res) => {
-	const { id } = req.params
+router.get("/:id", (req, res) => {
+	const { id } = req.params;
 
 	if (id) {
-		let oneBadge = undefined
+		let oneBadge = undefined;
 
 		badges.forEach((badge) => {
 			if (badge.id == id) {
@@ -26,65 +26,65 @@ router.get('/:id', (req, res) => {
 					jobTitle: badge.jobTitle,
 					twitter: badge.twitter,
 					avatarUrl: badge.avatarUrl,
-				}
+				};
 			}
-		})
+		});
 
-		res.json(oneBadge)
+		res.json(oneBadge);
 	} else {
-		res.status(500).json({ error: `Id don't exist` })
+		res.status(500).json({ error: `Id don't exist` });
 	}
-})
+});
 
 // set data
-router.post('/', (req, res) => {
-	const { firstName, lastName, email, jobTitle, twitter, avatarUrl } = req.body
+router.post("/", (req, res) => {
+	const { firstName, lastName, email, jobTitle, twitter, avatarUrl } = req.body;
 
 	if (firstName && lastName && email && jobTitle && twitter && avatarUrl) {
-		const id = badges.length + 1
-		const newBadge = { id, ...req.body }
+		const id = badges.length + 1;
+		const newBadge = { id, ...req.body };
 
-		badges.push(newBadge)
-		res.json(badges)
+		badges.push(newBadge);
+		res.json(badges);
 	} else {
-		res.status(500).json({ error: 'There was an error' })
+		res.status(500).json({ error: "There was an error" });
 	}
-})
+});
 
 // update data
-router.put('/:id', (req, res) => {
-	const { id } = req.params
-	const { firstName, lastName, email, jobTitle, twitter, avatarUrl } = req.body
+router.put("/:id", (req, res) => {
+	const { id } = req.params;
+	const { firstName, lastName, email, jobTitle, twitter, avatarUrl } = req.body;
 
 	if (firstName && lastName && email && jobTitle && twitter && avatarUrl) {
 		badges.forEach((badge) => {
 			if (badge.id == id) {
-				badge.firstName = firstName
-				badge.lastName = lastName
-				badge.email = email
-				badge.jobTitle = jobTitle
-				badge.twitter = twitter
-				badge.avatarUrl = avatarUrl
+				badge.firstName = firstName;
+				badge.lastName = lastName;
+				badge.email = email;
+				badge.jobTitle = jobTitle;
+				badge.twitter = twitter;
+				badge.avatarUrl = avatarUrl;
 			}
-		})
+		});
 
-		res.json(badges)
+		res.json(badges);
 	} else {
-		res.status(500).json({ error: 'There was an error' })
+		res.status(500).json({ error: "There was an error" });
 	}
-})
+});
 
 // delete data
-router.delete('/:id', (req, res) => {
-	const { id } = req.params
+router.delete("/:id", (req, res) => {
+	const { id } = req.params;
 
 	badges.forEach((badge, i) => {
 		if (badge.id == id) {
-			badges.splice(i, 1)
+			badges.splice(i, 1);
 		}
-	})
+	});
 
-	res.send('Deleted Successfully')
-})
+	res.send("Deleted Successfully");
+});
 
-module.exports = router
+export default router;

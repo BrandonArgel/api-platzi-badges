@@ -1,21 +1,21 @@
-const express = require('express')
-const morgan = require('morgan')
+import express, { urlencoded, json } from "express";
+import morgan from "morgan";
 
 // inicializacion
-const app = express()
+const app = express();
 
 // settings
-app.set('port', process.env.PORT || 5000)
+app.set("port", process.env.PORT || 5000);
 
 // middlewares
-app.use(morgan('dev'))
-app.use(express.urlencoded({ extended: false }))
-app.use(express.json())
+app.use(morgan("dev"));
+app.use(urlencoded({ extended: false }));
+app.use(json());
 
 // routes
-app.use('/api/badges', require('./routes/badge'))
+app.use("/api/badges", require("./routes/badge"));
 
 // startin the server
-app.listen(app.get('port'), () => {
-	console.log(`Server run on http://localhost:${app.get('port')}`)
-})
+app.listen(app.get("port"), () => {
+	console.log(`Server run on http://localhost:${app.get("port")}`);
+});
