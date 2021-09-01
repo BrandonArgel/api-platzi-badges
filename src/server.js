@@ -1,5 +1,5 @@
-import express, { urlencoded, json } from "express";
-import morgan from "morgan";
+const express = require("express");
+const morgan = require("morgan");
 
 // inicializacion
 const app = express();
@@ -9,8 +9,8 @@ app.set("port", process.env.PORT || 5000);
 
 // middlewares
 app.use(morgan("dev"));
-app.use(urlencoded({ extended: false }));
-app.use(json());
+app.use(express.urlencoded({ extended: false }));
+app.use(express.json());
 
 // routes
 app.use("/api/badges", require("./routes/badge"));

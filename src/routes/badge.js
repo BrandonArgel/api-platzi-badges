@@ -1,8 +1,8 @@
-import { Router } from "express";
+const { Router } = require("express");
 const router = Router();
 
 // db
-import { badges } from "../db.json";
+const { badges } = require("../db.json");
 
 // get data
 router.get("/", (req, res) => {
@@ -87,4 +87,4 @@ router.delete("/:id", (req, res) => {
 	res.send("Deleted Successfully");
 });
 
-export default router;
+module.exports = router;
