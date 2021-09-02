@@ -1,49 +1,31 @@
 {
 	"badges": [
     {
-      "id": 1,
-      "firstName": "Freddy",
-      "lastName": "Vega",
-      "email": "freddy@gmail.com",
-      "jobTitle": "CEO at Platzi",
-      "twitter": "Freddier",
-      "avatarUrl": "https://www.gravatar.com/avatar/f63a9c45aca0e7e7de0782a6b1dff40b?d=identicon"
-    },
-    {
-      "id": 2,
-      "firstName": "Ian",
-      "lastName": "Heaney",
-      "email": "Alexys.Gutkowski34@yahoo.com",
-      "jobTitle": "Direct Optimization Specialist",
-      "twitter": "IanHeaney66784",
-      "avatarUrl": "https://www.gravatar.com/avatar/097d0e30a04e69b707b08cdad62ffdd2?d=identicon"
-    },
-    {
-      "firstName": "Richard",
-      "lastName": "Kaufman López",
-      "email": "richardbkaufman@gmail.com",
-      "avatarUrl": "https://www.gravatar.com/avatar/21594ed15d68ace3965642162f8d2e84?d=identicon",
-      "jobTitle": "Frontend Engineer @ Kickass Partners",
-      "twitter": "sparragus",
-      "id": 3
-    },
-    {
-      "firstName": "Brandon Argel",
-      "lastName": "Verdeja Domínguez",
-      "email": "brandargel@gmail.com",
-      "jobTitle": "Frontend Developer y Data Scientist",
-      "twitter": "BrandonArgelVD",
-      "id": 4,
-      "avatarUrl": "https://avatars.githubusercontent.com/u/66845128?v=4"
-    },
-    {
-        "id": 5,
-        "firstName": "Aarón",
-        "lastName": "Garibay",
-        "email": "ing.aarongaribay@outlook.com",
-        "jobTitle": "The Boss",
-        "twitter": "AHardReset",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/22583153?v=4"
-    }
+    "id": 1,
+    "firstName": "Freddy",
+    "lastName": "Vega",
+    "email": "freddy@gmail.com",
+    "jobTitle": "CEO at Platzi",
+    "twitter": "Freddier",
+    "avatarUrl": "https://www.gravatar.com/avatar/f63a9c45aca0e7e7de0782a6b1dff40b?d=identicon"
+  },
+  {
+    "id": 2,
+    "firstName": "Richard",
+    "lastName": "Kaufman López",
+    "email": "richardbkaufman@gmail.com",
+    "avatarUrl": "https://www.gravatar.com/avatar/21594ed15d68ace3965642162f8d2e84?d=identicon",
+    "jobTitle": "Frontend Engineer @ Kickass Partners",
+    "twitter": "sparragus"
+  },
+  {
+    "id": 3,
+    "firstName": "Brandon Argel",
+    "lastName": "Verdeja Domínguez",
+    "email": "brandargel@gmail.com",
+    "jobTitle": "Frontend Developer, Pentester y Data Scientist",
+    "twitter": "BrandonArgelVD",
+    "avatarUrl": "https://www.gravatar.com/avatar/4f7dcd5c062c58b23864f0462a670cbd?d=identicon"
+  }
   ]
 }
