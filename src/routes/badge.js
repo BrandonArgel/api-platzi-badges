@@ -46,8 +46,10 @@ router.post("/", (req, res) => {
 
 		badges.push(newBadge);
 		res.json(badges);
+	} else if (!firstName || !lastName || !email || !jobTitle || !twitter || !avatarUrl) {
+		res.status(400).json({ error: "There's missing data" });
 	} else {
-		res.status(500).json({ error: "There was an error" });
+		res.status(500).json({ error: "Something went wrong" });
 	}
 });
 
@@ -69,6 +71,8 @@ router.put("/:id", (req, res) => {
 		});
 
 		res.json(badges);
+	} else if (!firstName || !lastName || !email || !jobTitle || !twitter || !avatarUrl) {
+		res.status(400).json({ error: "There's missing data" });
 	} else {
 		res.status(500).json({ error: "There was an error" });
 	}
@@ -88,3 +92,10 @@ router.delete("/:id", (req, res) => {
 });
 
 module.exports = router;
+
+// HTTP Response Codes
+// Respuestas informativas (100–199),
+// Respuestas satisfactorias (200–299),
+// Redirecciones (300–399),
+// Errores de los clientes (400–499),
+// y errores de los servidores (500–599).
