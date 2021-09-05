@@ -1,5 +1,5 @@
 # api-platzi-badges
-API para el proyecto de Platzi Badges
+API for Platzi Badges project
 
 View API:
 
