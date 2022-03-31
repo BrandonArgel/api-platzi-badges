@@ -7,4 +7,4 @@ View API:
 
 Link to the project
 
-- https://brandonargel.me/platzi-badges/
+- https://brandonargel.github.io/platzi-badges/
